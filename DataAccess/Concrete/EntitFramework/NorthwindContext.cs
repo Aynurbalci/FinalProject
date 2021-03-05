@@ -4,7 +4,8 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace DataAccess.Concrete.EntitiyFramework_
+namespace DataAccess.Concrete.EntitFramework
+
 {
     //Context:Db tabloları ile proje classlarını bağlamak
     public class NorthwindContext:DbContext
@@ -19,6 +20,7 @@ namespace DataAccess.Concrete.EntitiyFramework_
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Customer> Customers { get; set; }
+        public DbSet<Order> Orders { get; set; }
 
     }
 }
